@@ -12,8 +12,6 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-rows: 1.5fr .7fr .7fr 2fr .5fr;
-    width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -25,8 +23,6 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
 }
 
 .profile {
@@ -35,8 +31,6 @@ html, body {
   align-items:center;
   grid-column: 2 / 3;
   grid-row: 2 / 4;
-  height: 100%;
-  width: 100%;
 }
 
 .profile-photo {
@@ -65,8 +59,6 @@ h2 {
   justify-content: center;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-  height: 100%;
-  width: 100%;
 }
 
 .menu {
@@ -109,8 +101,6 @@ h2 {
   gap: 1.5rem;
   grid-column: 3 / 4;
   grid-row: 5 / 6;
-  height: 100%;
-  width: 100%;
 }
 
 .copywright {
