@@ -1,2 +1,2 @@
 # notion-interface
-A Notion-like personal website
+A Notion-style personal website
