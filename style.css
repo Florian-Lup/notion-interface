@@ -21,8 +21,8 @@ html, body {
     grid-template-rows: 1.5fr .7fr .7fr auto .5fr;
     padding: 0;
     margin: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .header {
