@@ -43,13 +43,13 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   margin: 0;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: lighter;
   margin: 0;
 }
@@ -124,11 +124,11 @@ h2 {
 
 @media (max-width: 450px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .menu > li {
