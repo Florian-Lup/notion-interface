@@ -120,6 +120,10 @@ h2 {
     justify-content: space-between;
     gap: 0;
   }
+
+  .btn-primary {
+    padding: .3rem .8rem;
+  }
 }
 
 @media (max-width: 450px) {
