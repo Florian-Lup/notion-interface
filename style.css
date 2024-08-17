@@ -123,10 +123,6 @@ h2 {
 }
 
 @media (max-width: 450px) {
-  .menu > li {
-    font-size: 0.7rem;
-    padding: 0.4rem 0;
-  }
 
   .menu li img {
     height: 1rem;
