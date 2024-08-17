@@ -1,0 +1,172 @@
+body {
+  background-color: #f0f8ff;
+  font-family: "JetBrains Mono", monospace;
+  color: #222222;
+  height: 100vh;
+  height: 100dvh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: 1.5fr 0.7fr 0.7fr 2fr 0.5fr;
+  height: 100%;
+}
+
+.cover {
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+  background-image: url("./Assets/images/abstractblue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+.profile-photo > img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 5%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.menu {
+  list-style-type: none;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu > li {
+  display: inline-flex;
+  border-top: 1px solid #dcdcdc;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.menu a {
+  color: black;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+  width: 100%;
+}
+
+.menu a:hover {
+  color: black;
+  margin-left: 0.5rem;
+  background-color: #e0ffff;
+  border-radius: 5%;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.footer > p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 999px) {
+  .footer {
+    grid-column: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 6fr 2fr;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .menu > li {
+    font-size: 0.7rem;
+    padding: 0.4rem 0;
+  }
+
+  .menu li img {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.2rem 0.7rem;
+  }
+
+  .bi-twitter {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 7fr 1fr;
+  }
+}
+
+@media (max-height: 469px) {
+  .profile-photo {
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
