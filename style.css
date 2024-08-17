@@ -10,7 +10,7 @@ html, body {
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: 1.5fr .7fr .7fr 2fr .5fr;
+    grid-template-rows: 1.5fr .7fr .7fr auto .5fr;
     padding: 0;
     margin: 0;
 }
