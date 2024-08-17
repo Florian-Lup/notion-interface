@@ -16,6 +16,7 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-rows: 1.5fr .7fr .7fr auto .5fr;
+    height: 100%;
 }
 
 .header {
