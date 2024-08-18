@@ -50,8 +50,9 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
-  font-weight: lighter;
   margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 .info {
@@ -123,12 +124,6 @@ h2 {
 }
 
 @media (max-width: 450px) {
-
-  .menu li img {
-    height: 1rem;
-    width: 1rem;
-  }
-
   .btn-primary {
     padding: 0.2rem 0.7rem;
   }
@@ -140,12 +135,6 @@ h2 {
 
   .grid-container {
     grid-template-columns: 1fr 7fr 1fr;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.1rem;
   }
 }
 
