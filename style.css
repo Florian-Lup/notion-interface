@@ -15,7 +15,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 3.5fr 3fr;
-  grid-template-rows: 1.5fr 0.5fr 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1.5fr auto auto 2fr 0.5fr;
   height: 100%;
 }
 
@@ -54,6 +54,7 @@ h2 {
   font-weight: 300;
   font-family: "Inter", sans-serif;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .info {
@@ -64,6 +65,7 @@ h2 {
   justify-content: center;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
+  margin-top: 0.5rem;
 }
 
 .menu {
@@ -112,7 +114,7 @@ h2 {
   margin: 0;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1001px) {
   .footer {
     grid-column: 2;
     justify-content: space-between;
@@ -121,11 +123,5 @@ h2 {
 
   .grid-container {
     grid-template-columns: 1fr 6fr 1fr;
-  }
-}
-
-@media (max-height: 630px) {
-  .profile-photo {
-    overflow: hidden;
   }
 }
